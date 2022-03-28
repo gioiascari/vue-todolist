@@ -2,6 +2,9 @@ console.log("Ok Vue Js :)");
 /*MILESTONE 3
 Predisporre un campo di input testuale e un pulsante "aggiungi": cliccando sul pulsante,
  il testo digitato viene letto e utilizzato per creare un nuovo todo, che quindi viene aggiunto alla lista dei todo esistenti. */
+console.log("Ok Vue Js :)");
+/*MILESTONE 2
+ Visualizzare a fianco ad ogni item ha una "x": cliccando su di essa, il todo viene rimosso dalla lista. */
 const app = new Vue({
   el: "#todoListVue",
   data: {
@@ -23,23 +26,19 @@ const app = new Vue({
         done: true,
       },
     ],
+    doneTasks: [],
     textValue: "",
   },
   methods: {
-    addTask() {
+    addTask(index) {
       if (this.textValue) {
         this.todos.push({
+          text: this.textValue,
           done: false,
         });
       }
       this.textValue = "";
-    },
-    addNewTask() {
-      const newTask = this.newTask.trim();
-      if (newTask.length > 0) {
-        this.todos.push(newTask);
-        this.newTask = "";
-      }
+      this.doneTasks.push(index);
     },
   },
 });
