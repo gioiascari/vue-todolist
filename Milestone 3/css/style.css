@@ -21,3 +21,13 @@ li {
 .done {
   text-decoration: line-through;
 }
+input {
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}

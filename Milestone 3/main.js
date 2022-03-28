@@ -9,19 +9,23 @@ const app = new Vue({
   data: {
     todos: [
       {
-        text: "lorem Ippsum",
+        text: "Portare fuori il cane",
         done: false,
       },
       {
-        text: "lorem Ippsum",
+        text: "Andare al mercato",
         done: true,
       },
       {
-        text: "lorem Ippsum",
+        text: "Pattinare",
         done: false,
       },
       {
-        text: "lorem Ippsum",
+        text: "Fare una passeggiata in montagna",
+        done: true,
+      },
+      {
+        text: "Alzarsi dal letto",
         done: true,
       },
     ],
