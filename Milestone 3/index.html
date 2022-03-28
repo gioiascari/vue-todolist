@@ -49,11 +49,13 @@
             </div>
           </li>
         </ul>
+        <!--Bonus: intercettare il tasto ENTER per aggiungere il todo alla lista-->
         <input
           type="text"
           id="inputText"
           v-model="textValue"
           placeholder="Add a new task"
+          @keyup.enter="addTask"
         />
         <button id="button-list" @click="addTask">Add Task</button>
       </div>
