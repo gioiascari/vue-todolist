@@ -5,3 +5,9 @@
 }
 
 /*-----UTILITIES------*/
+ul {
+  list-style-type: none;
+}
+.done {
+  text-decoration: line-through;
+}
