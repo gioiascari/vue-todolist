@@ -34,19 +34,15 @@
         <div class="title"><h2>To Do List</h2></div>
         <ul id="todos-container" class="list-group bg-light bg-opacity-75">
           <li v-for="(item, index) in todos" class="bg-light">
-            <div class="todo-item" v-if="!doneTasks.includes(index)">
-              <i
-                @click="addTask(index)"
-                :tabindex="todos.length - index"
-                class="close-icon far"
-                :class="(item.done) ?'fa-times-circle' : 'fa-check-circle'"
-              ></i
-              ><span
-                :class="{'done' : item.done}"
-                @click="item.done = !item.done"
-                >{{item.text}}</span
-              >
-            </div>
+            <i
+              @click="addTask(index)"
+              :tabindex="todos.length - index"
+              class="close-icon far"
+              :class="(item.done) ?'fa-times-circle' : 'fa-check-circle'"
+            ></i
+            ><span :class="{'done' : item.done}" @click="item.done = !item.done"
+              >{{item.text}}</span
+            >
           </li>
         </ul>
         <input

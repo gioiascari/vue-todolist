@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/*-----UTILITIES------*/
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  padding: 10px;
+  list-style-type: none;
+}
+li {
+  padding: 10px;
+  margin: 20px;
+}
+.done {
+  text-decoration: line-through;
+}
