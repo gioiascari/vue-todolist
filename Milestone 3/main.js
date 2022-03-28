@@ -38,6 +38,7 @@ const app = new Vue({
       const newTask = this.newTask.trim();
       if (newTask.length > 0) {
         this.todos.push(newTask);
+        this.newTask = "";
       }
     },
   },
